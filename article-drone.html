@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Дроновірус</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/setting.css">
+	<link rel="stylesheet" href="css/media.css">
+  <link rel="icon" type="image/x-icon" href="img/svg/white-logo.svg">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__content">
+        <!-- Логотип -->
+        <a href="home.html"><div class="logo__box">
+          <img src="img/svg/logo.svg" alt="FLASH NEWS!" class="logo__image">
+        </div></a>
+
+        <!-- Кнопка зміни теми -->
+        <button class="theme-switcher">
+          <img src="img/svg/moon-normal.svg" alt="Theme Icon" class="theme-icon">
+          <span class="theme__title">Змінити тему</span>
+        </button>
+      </div>
+    </header>  
+    
+    <main class="main">
+      <div class="main__content">
+        <div class="article__description">
+          <h1 class="title">Дроновірус</h1>
+          <div class="article__block">
+            <img class="post-image" src="img/jpg/drone.jpg" alt="Дрон на долоні">
+            <div class="post-meta">
+              <div class="post-meta-info">
+                <div class="likes">
+                  <img src="img/svg/icon-heart-light.svg" alt="Heart Icon" class="heart-icon">
+                  <span class="like-count">28</span>
+                </div>
+                <span class="post-date">13 жовтня 2022</span>
+              </div>
+              <div class="post-text">
+                <p>
+                  Конструктори лабораторії DogDrones.inc 
+                  запевнили, що їхні дрони не можуть бути переносниками небезпечних вірусів, 
+                  так як це не закладено у їх програму. Можливо, справжня причина в тому, 
+                  що дрони лабораторії не здатні переносити взагалі нічого.
+                </p>
+              </div>  
+            </div>  
+          </div>
+        </div>
+
+        <div class="comment-section">
+          <h2 class="subtitle">Коментарі</h2>
+          
+          <!-- Блок для нових коментарів -->
+          <div class="comment-list">
+            <div class="comment-item">
+              <span class="comment-number">#1</span>
+              <p class="comment-text">Це не може бути правдою...</p>
+            </div>
+          </div>
+          
+          <h3 class="comment-create">Новий коментар</h3>
+          
+          <form class="comment-form">
+            <div class="input-wrapper">
+              <label for="textInput" class="title-hint">ваш коментар</label>
+              <input id="textInput" type="text" class="comment-field" placeholder="Коментар" maxlength="142" required />
+            </div>  
+            <div class="comment-send">
+              <span id="char-counter" class="char-counter">
+                Використано <span id="current-count">0</span>/<span id="max-count">142</span> символів
+              </span>
+              <button class="submit-button">Надіслати</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    
+    <footer class="footer">
+      <div class="footer__content">
+        <p class="footer__text">© 2024 Flash News. Всі права захищені.</p>
+        <a href="home.html"><div class="logo__box">
+          <img src="img/svg/white-logo.svg" alt="FLASH NEWS!" class="logo__image">
+        </div></a>
+      </div>
+    </footer>
+
+    <button id="scrollToTopBtn">↑</button>
+
+    <div id="cookieBanner" class="hidden">
+      <p>
+        Ми використовуємо файли cookie та сервіси збору технічних даних відвідувачів 
+        (наприклад, IP-адресу, місцезнаходження тощо) для забезпечення роботи сайту 
+        та покращення якості обслуговування. Продовжуючи користуватися нашим сайтом, 
+        ви погоджуєтеся з використанням цих технологій.
+        <a href="#" id="learnMore">Детальніше</a>
+      </p>
+      <button id="acceptCookies">Прийняти</button>
+    </div>
+
+  </div>
+  <script src="js/script.js"></script>
+  <script src="js/comment.js"></script>
+  <script src="js/theme_button.js"></script>
+  <script src="js/burger.js"></script>
+  <script src="js/filter.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/likes.js"></script>
+  <script src="js/tooltip.js"></script>
+  <script src="js/up_button.js"></script>
+</body>
+</html>    
