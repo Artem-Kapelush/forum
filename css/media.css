@@ -16,7 +16,8 @@
         font-size: 2em;
     }
     .like-count,
-    .subtitle {
+    .subtitle,
+    #scrollToTopBtn {
         font-size: 1.750em;
     }
     .sorting__list, 
@@ -102,6 +103,16 @@
     .email-input-block {
         padding: 25px;
     }
+    .input-wrapper {
+        width: 75%;
+    }
+    .email-input-block {
+        align-items: center;
+        flex-direction: column;
+    }
+    .tooltip-message {
+        z-index: 9999;
+    }
     #cookieBanner {
         width: 85%;
     }
@@ -132,7 +143,8 @@
         font-size: 2em;
     }
     .like-count,
-    .subtitle {
+    .subtitle,
+    #scrollToTopBtn {
         font-size: 1.750em;
     }
     .sorting__list, 
@@ -249,7 +261,8 @@
         font-size: 2em;
     }
     .like-count,
-    .subtitle {
+    .subtitle,
+    #scrollToTopBtn {
         font-size: 1.750em;
     }
     .sorting__list, 
@@ -350,7 +363,8 @@
         font-size: 1.875em;
     }
     .like-count,
-    .subtitle {
+    .subtitle,
+    #scrollToTopBtn {
         font-size: 1.675em;
     }
     .sorting__list, 
