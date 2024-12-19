@@ -6,7 +6,7 @@ heartIcon.addEventListener("click", () => {
         heartIcon.src = "img/svg/icon-heart-light-added.svg";
         likeCount.textContent = parseInt(likeCount.textContent) + 1;
     } else {
-        heartIcon.src = "img/icon-heart-light.svg";
+        heartIcon.src = "img/svg/icon-heart-light.svg";
         likeCount.textContent = parseInt(likeCount.textContent) - 1;
     }
 });
