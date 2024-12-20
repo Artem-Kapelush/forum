@@ -465,6 +465,7 @@ a {
 }
 
 .title-news_block {
+  grid-column: span 2;
   text-align: center;
   padding: 10px 0;
 }
