@@ -464,6 +464,11 @@ a {
   font-weight: bold;
 }
 
+.title-news_block {
+  text-align: center;
+  padding: 10px 0;
+}
+
 .article__block {
   display: var(--display);
   flex-direction: var(--flex-direction);
