@@ -1,0 +1,499 @@
+@media (min-width: 320px) and (max-width: 450px) {
+    * {
+        transition: all 0.3s ease;
+    }
+    .header__content, .header__content.fixed, .main__content, .footer__content {
+        width: 90%;
+    }
+    .header__content {
+        gap: var(--micro-gap);
+        padding: 15px 0;
+    }
+    .header__content.fixed {
+        padding: 15px;
+        left: 5%;
+    }
+    .navigation-tools {
+        gap: var(--gap);
+    }
+    .search-container {
+        width: 195px !important;
+        left: calc(100% - 147.5px);
+    }
+    .title {
+        font-size: 2em;
+    }
+    .like-count,
+    .subtitle,
+    .comment-username,
+    #scrollToTopBtn {
+        font-size: 1.750em;
+    }
+    .sorting__list, 
+    .sorting__grid,
+    .news__title,
+    .post-date,
+    .post-text,
+    .comment-date,
+    .comment-text,
+    .reply-button,
+    .comment-create,
+    .message-title,
+    .title-hint,
+    .comment-field,
+    .submit-button,
+    .subscribe-button,
+    .rounded-info-block,
+    #cookieBanner p,
+    #cookieBanner a,
+    #cookieBanner button {
+        font-size: 1.250em;
+    }
+    .news__description,
+    .news__hashtag,
+    .news__time,
+    .char-counter,
+    .email-field,
+    .tooltip-message,
+    #cookieBanner p,
+    #cookieBanner a,
+    #cookieBanner button {
+        font-size: 1em;
+    }
+    .filter-sort__box {
+        flex-direction: column;
+        gap: var(--large-gap);
+    }
+    .sort__box {
+        justify-content: space-between;
+    }
+    .sorting__list, 
+    .sorting__grid, 
+    .filter__button {
+        height: 45px;
+    }
+    .sorting__list, 
+    .sorting__grid {
+        flex: 0 0 47.5%;
+    }
+    .filter__button,
+    .filter__options {
+        width: 175px;
+    }
+    .sorting__image {
+        width: 20px;
+        height: 20px;
+    }
+    .news {
+        gap: 20px;
+    }
+    .news-content {
+        gap: var(--gap);
+    }
+    .news__img {
+        width: 120px;
+        height: 120px;
+    }
+    .news__img-column {
+        height: 250px;
+    }
+    .distribution__img-column {
+        height: 200px !important;
+    }
+    .heart-icon {
+        width: 26px;
+        height: 26px;
+    }
+    .comment-form,
+    .comment-list {
+        gap: 15px;
+    }
+    .comment-item.reply .comment-body {
+        margin-top: 15px;
+    }
+    .comment-avatar {
+        width: 40px;
+        height: 40px;
+    }
+    .reply-button {
+        padding: 7.5px 15px;
+    }
+    .report-footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .justification-field {
+        min-height: 215px;
+        max-height: 215px;
+    }
+    .report-success-message {
+        text-align: center;
+        width: 65%;
+    }
+    .title-hint {
+        top: -17.5px;
+    }
+    .comment-form,
+    .email-input-block {
+        padding: 25px;
+    }
+    .email-input-block {
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .tooltip-message {
+        z-index: 9999;
+    }
+    .subscribe-button {
+        width: 100%;
+    }
+    #cookieBanner {
+        width: 85%;
+    }
+    #scrollToTopBtn {
+        width: 70px;
+        height: 70px;
+    }
+    #cookieBanner button {
+        padding: 12.5px 25px;
+    }
+}
+@media (min-width: 451px) and (max-width: 767px) {
+    * {
+        transition: all 0.3s ease;
+    }
+    .header__content, .header__content.fixed, .main__content, .footer__content {
+        width: 85%;
+    }
+    .header__content {
+        padding: 12.5px 0;
+    }
+    .header__content.fixed {
+        left: 7.5%;
+        padding: 12.5px;
+    }
+    .title {
+        font-size: 2em;
+    }
+    .like-count,
+    .subtitle,
+    .comment-username,
+    #scrollToTopBtn {
+        font-size: 1.750em;
+    }
+    .sorting__list, 
+    .sorting__grid,
+    .news__title,
+    .post-date,
+    .post-text,
+    .comment-date,
+    .comment-text,
+    .reply-button,
+    .comment-create,
+    .title-hint,
+    .message-title,
+    .comment-field,
+    .submit-button,
+    .subscribe-button,
+    .rounded-info-block {
+        font-size: 1.250em;
+    }
+    .news__description,
+    .news__hashtag,
+    .news__time,
+    .char-counter,
+    .email-field,
+    .tooltip-message,
+    #cookieBanner p,
+    #cookieBanner a,
+    #cookieBanner button {
+        font-size: 1em;
+    }
+    .sorting__list, 
+    .sorting__grid, 
+    .filter__button {
+        height: 42.5px;
+    }
+    .sorting__list, 
+    .sorting__grid {
+        flex: 0 0 37.5%;
+    }
+    .filter__button {
+        width: 135px;
+    }
+    .sorting__image {
+        width: 19px;
+        height: 19px;
+    }
+    .news {
+        gap: 20px;
+    }
+    .news-content {
+        gap: var(--gap);
+    }
+    .news__img {
+        width: 120px;
+        height: 120px;
+    }
+    .heart-icon {
+        width: 26px;
+        height: 26px;
+    }
+    .comment-form,
+    .comment-list {
+        gap: 15px;
+    }
+    .comment-item.reply .comment-body {
+        margin-top: 15px;
+    }
+    .title-hint {
+        top: -17.5px;
+    }
+    .comment-form,
+    .email-input-block {
+        padding: 25px;
+    }
+    .rounded-info-block {
+        padding: 13px 10px 20px 40px;
+    }
+    #cookieBanner {
+        width: 80%;
+    }
+    #scrollToTopBtn {
+        width: 65px;
+        height: 65px;
+    }
+    #cookieBanner button {
+        padding: 12.5px 25px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 557px) {
+    * {
+        transition: all 0.3s ease;
+    }
+    .rounded-info-block {
+        padding: 13px 10px 20px 52.5px;
+    }
+    .icon-ok {
+        width: 64px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 892px) {
+    * {
+        transition: all 0.3s ease;
+    }
+    .subscribed-block {
+        padding: 13px 10px 20px 50px !important;;
+    }
+    .subscribed-icon {
+        width: 64px !important;;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    * {
+        transition: all 0.3s ease;
+    }
+    .header__content, .header__content.fixed, .main__content, .footer__content {
+        width: 60%;
+    }
+    .header__content {
+        padding: 15px 0;
+    }
+    .header__content.fixed {
+        left: 20%;
+        padding: 15px;
+    }
+    .title {
+        font-size: 2em;
+    }
+    .like-count,
+    .subtitle,
+    .comment-username,
+    #scrollToTopBtn {
+        font-size: 1.750em;
+    }
+    .sorting__list, 
+    .sorting__grid,
+    .news__title,
+    .post-date,
+    .post-text,
+    .comment-date,
+    .comment-text,
+    .reply-button,
+    .comment-create,
+    .message-title,
+    .title-hint,
+    .comment-field,
+    .submit-button,
+    .subscribe-button,
+    .rounded-info-block {
+        font-size: 1.250em;
+    }
+    .news__description,
+    .news__hashtag,
+    .news__time,
+    .char-counter,
+    .email-field,
+    .tooltip-message,
+    #cookieBanner p,
+    #cookieBanner a,
+    #cookieBanner button {
+        font-size: 1em;
+    }
+    .sorting__list, 
+    .sorting__grid, 
+    .filter__button {
+        height: 40px;
+    }
+    .sorting__list, 
+    .sorting__grid {
+        flex: 0 0 35%;
+    }
+    .filter__button {
+        width: 130px;
+    }
+    .sorting__image {
+        width: 18px;
+        height: 18px;
+    }
+    .news-content {
+        gap: var(--gap);
+    }
+    .news__img {
+        width: 120px;
+        height: 120px;
+    }
+    .news__img-column {
+        height: 225px;
+    }
+    .heart-icon {
+        width: 26px;
+        height: 26px;
+    }
+    .comment-form,
+    .comment-list {
+        gap: 15px;
+    }
+    .comment-item.reply .comment-body {
+        margin-top: 15px;
+    }
+    .title-hint {
+        top: -17.5px;
+    }
+    .comment-form,
+    .email-input-block {
+        padding: 25px;
+    }
+    .rounded-info-block {
+        padding: 13px 10px 20px 32.5px;
+    }
+    #scrollToTopBtn {
+        width: 60px;
+        height: 60px;
+    }
+}
+      
+@media (min-width: 1024px) and (max-width: 1280px) {
+    * {
+        transition: all 0.3s ease;
+    }
+    .header__content, .header__content.fixed, .main__content, .footer__content {
+        width: 55%;
+    }
+    
+    .header__content {
+        padding: 12.5px 0;
+    }
+    .header__content.fixed {
+        left: 22.5%;
+        padding: 12.5px;
+    }
+    .title {
+        font-size: 1.875em;
+    }
+    .like-count,
+    .subtitle,
+    .comment-username,
+    #scrollToTopBtn {
+        font-size: 1.675em;
+    }
+    .sorting__list, 
+    .sorting__grid,
+    .news__title,
+    .post-date,
+    .post-text,
+    .comment-date,
+    .comment-text,
+    .reply-button,
+    .comment-create,
+    .message-title,
+    .title-hint,
+    .comment-field,
+    .submit-button,
+    .subscribe-button,
+    .rounded-info-block,
+    #cookieBanner p,
+    #cookieBanner a {
+        font-size: 1.125em;
+    }
+    .news__description,
+    .news__hashtag,
+    .news__time,
+    .char-counter,
+    .email-field,
+    .tooltip-message {
+        font-size: 0.925em;
+    }
+    .sorting__list, 
+    .sorting__grid, 
+    .filter__button {
+        height: 37.5px;
+    }
+    .sorting__list, 
+    .sorting__grid {
+        flex: 0 0 27.5%;
+    }
+    .filter__button {
+        width: 125px;
+    }
+    .sorting__image {
+        width: 17px;
+        height: 17px;
+    }
+    .news-content {
+        gap: 8px;
+    }
+    .news__img {
+        width: 110px;
+        height: 110px;
+    }
+    .heart-icon {
+        width: 25px;
+        height: 25px;
+    }
+    .comment-form,
+    .comment-list {
+        gap: 12.5px;
+    }
+    .comment-item.reply .comment-body {
+        margin-top: 12.5px;
+    }
+    .title-hint {
+        top: -15px;
+    }
+    .comment-form,
+    .email-input-block {
+        padding: 22.5px;
+    }
+    .rounded-info-block {
+        padding: 13px 10px 20px 35px;
+    }
+    #scrollToTopBtn {
+        width: 55px;
+        height: 55px;
+    }
+}
