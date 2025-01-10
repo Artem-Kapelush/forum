@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Статті</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/setting.css">
+	<link rel="stylesheet" href="css/media.css">
+  <link rel="icon" type="image/x-icon" href="img/svg/white-logo.svg">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__content"> 
+        <!-- Логотип -->
+        <div class="logo__box"><a href="home.html">
+          <img src="img/svg/logo.svg" alt="FLASH NEWS!" class="logo__image">
+        </a></div>
+
+        <div class="navigation-tools">
+          <!-- Кнопка зміни теми -->
+          <button class="button-tools theme-switcher">
+            <img src="img/svg/moon-normal.svg" alt="Theme Icon" class="icon-tools theme-icon">
+          </button>
+
+          <!-- Кнопка пошуку -->
+          <button class="button-tools search" id="search-button">
+            <img src="img/svg/search-normal.svg" alt="Search Icon" class="icon-tools search-icon">
+          </button>
+                  
+          <!-- Поле для вводу -->
+          <div class="search-container">
+            <button class="button-tools search-submit" id="submit-search-button">
+              <img src="img/svg/search-hover.svg" alt="Search Submit Icon" class="icon-tools search-submit-icon">
+            </button>
+
+            <input type="text" class="search-input" placeholder="Пошук статей">
+          </div>
+
+          <!-- Кнопка профілю -->
+          <button class="button-tools profile">
+            <img src="img/svg/profile-normal.svg" alt="Profile Icon" class="icon-tools profile-icon">
+          </button>
+        </div>
+
+        <!-- Меню навігації -->
+        <button id="menu-button" class="dropdown__navigation">
+          <img id="menu-icon" src="img/svg/menu-open-light.svg" alt="Menu Icon">
+        </button>
+        <nav id="menu-list" class="navigation__items hidden">
+          <a href="home.html" class="navigation__link">Головна</a>
+          <a href="distribution.html" class="navigation__link">Розсилка</a>
+          <a href="#контакти" class="navigation__link">Контакти</a>
+        </nav>
+      </div>
+    </header>
+    
+    <main class="main">
+      <div class="main__content">
+
+        <div id="search-results" class="search-results"></div>
+
+        <!-- Блок сортування і фільтрації -->
+        <div class="filter-sort__box">
+          <!-- Сортування -->
+          <div class="sort__box">
+            <button id="list-icon" class="sorting__list list-light-checked active">
+              <img src="img/svg/list-light-checked.svg" alt="Список" class="sorting__image">
+              <span class="sorting__title">Список</span>
+            </button>
+            <button id="grid-icon" class="sorting__grid grid-light">
+              <img src="img/svg/grid-light.svg" alt="Плитка" class="sorting__image">
+              <span class="sorting__title">Плитка</span>
+            </button>
+          </div>
+        
+          <!-- Фільтр -->
+          <div class="filter__dropdown">
+            <button id="filter-button" class="filter__button">
+              <span class="filter__title">Всі новини</span>
+              <img src="img/svg/arrow-light.svg" alt="Стрілка" class="filter__arrow arrow">
+            </button>
+            <ul id="filter-options" class="filter__options hidden">
+              <li class="filter__option">Всі</li>
+              <li class="filter__option" data-category="it">ІТ</li>
+              <li class="filter__option" data-category="artificial-intelligence">Штучний Інтелект</li>
+              <li class="filter__option" data-category="sport">Спорт</li>
+              <li class="filter__option" data-category="game">Ігри</li>
+              <li class="filter__option" data-category="discoveries">Відкриття</li>
+              <li class="filter__option" data-category="history">Історія</li>
+              <li class="filter__option" data-category="drones">Дрони</li>
+              <li class="filter__option" data-category="psychology">Психологія</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Список новин -->
+        <div class="news">
+          <div class="news-item" data-category="drones">
+            <a href="article-drone.html"><img src="img/jpg/news-drone.jpg" alt="News Image" class="news__img"></a>
+            <div class="news-content">
+              <a href="article-drone.html" class="news__link">
+                <h3 class="news__title">ШОК! Секретні кадри з дрона-розвідника</h3>
+              </a>
+              <p class="news__description">Ніхто не очікував, що за стінами відбувається ТАКЕ...</p>
+              <div class="news__meta">
+                <span class="news__hashtag">#Дрони</span>
+                <p class="news__time">13 жовтня 2022</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="news-item" data-category="sport">
+            <a href="article-box.html"><img src="img/jpg/news-jake-vs-tyson.jpg" alt="News Image" class="news__img"></a>
+            <div class="news-content">
+              <a href="article-box.html" class="news__link">
+                <h3 class="news__title">Джейк Пол проти Майка Тайсона: нове покоління проти легенди</h3>
+              </a>
+              <p class="news__description">Бій між Джейком Полом і Майком Тайсоном став знаковим моментом для світового боксу. Молодий Пол переміг легенду Тайсона, підтвердивши свій статус серйозного конкурента.</p>
+              <div class="news__meta">
+                <span class="news__hashtag">#Спорт</span>
+                <p class="news__time">16 листопада 2024</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="news-item" data-category="game">
+            <a href="article-stalker.html"><img src="img/jpg/news-stalker2.jpg" alt="News Image" class="news__img"></a>
+            <div class="news-content">
+              <a href="article-stalker.html" class="news__link">
+                <h3 class="news__title">S.T.A.L.K.E.R. 2: Новий виток легендарної гри</h3>
+              </a>
+              <p class="news__description">Фанати давно чекали цього моменту: вихід довгоочікуваного продовження гри.</p>
+              <div class="news__meta">
+                <span class="news__hashtag">#Ігри</span>
+                <p class="news__time">20 листопада 2024</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="news-item" data-category="history">
+            <a href="article-history.html"><img src="img/jpg/news-fascism-argentina.jpg" alt="News Image" class="news__img"></a>
+            <div class="news-content">
+              <a href="article-history.html" class="news__link">
+                <h3 class="news__title">Аргентина: дивовижні відкриття на іншому кінці світу</h3>
+              </a>
+              <p class="news__description">Новий погляд на культури Південної Америки крізь історичні артефакти.</p>
+              <div class="news__meta">
+                <span class="news__hashtag">#Аргентина</span>
+                <p class="news__time">1 липня 2023</p>
+              </div>
+            </div>
+          </div>
+          
+          <h1 class="title title-news_block">Статті в процесі створення</h1>
+
+          <div class="news-item" data-category="it">
+            <a href="article5.html"><img src="img/jpg/news-graph.jpg" alt="News Image" class="news__img"></a>
+            <div class="news-content">
+              <a href="article5.html" class="news__link">
+                <h3 class="news__title">Нова бібліотека для створення графіків</h3>
+              </a>
+              <p class="news__description">Тепер можна створити дашборд за лічені секунди.</p>
+              <div class="news__meta">
+                <span class="news__hashtag">#IT</span>
+                <p class="news__time">16 жовтня 2022</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="news-item" data-category="game">
+            <a href="article6.html"><img src="img/jpg/news-robot.jpg" alt="News Image" class="news__img"></a>
+            <div class="news-content">
+              <a href="article6.html" class="news__link">
+                <h3 class="news__title">А що там у роботів?</h3>
+              </a>
+              <p class="news__description">У робототехніці відбувається багато цікавого, ця новина могла б бути про це, але ні.</p>
+              <div class="news__meta">
+                <span class="news__hashtag">#Ігри</span>
+                <p class="news__time">15 жовтня 2022</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="news-item" data-category="it">
+            <a href="article7.html"><img src="img/jpg/news-loop.jpg" alt="News Image" class="news__img"></a>
+            <div class="news-content">
+              <a href="article7.html" class="news__link">
+                <h3 class="news__title">Нескінченні цикли: час зав'язувати з цим</h3>
+              </a>
+              <p class="news__description">Британські вчені з'ясували, що робота ПЗ безпосередньо залежить від наявності в…</p>
+              <div class="news__meta">
+                <span class="news__hashtag">#ІТ</span>
+                <p class="news__time">14 жовтня 2022</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="news-item" data-category="psychology">
+            <a href="article8.html"><img src="img/jpg/new-research.jpg" alt="News Image" class="news__img"></a>
+            <div class="news-content">
+              <a href="article8.html" class="news__link">
+                <h3 class="news__title">Зі світу психології</h3>
+              </a>
+              <p class="news__description">Дослідження показують, що робити більше, можна зробити більше.</p>
+              <div class="news__meta">
+                <span class="news__hashtag">#Психологія</span>
+                <p class="news__time">12 жовтня 2022</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="news-item" data-category="it">
+            <a href="article9.html"><img src="img/jpg/new-cat.jpg" alt="News Image" class="news__img"></a>
+            <div class="news-content">
+              <a href="article9.html" class="news__link">
+                <h3 class="news__title">Раптово</h3>
+              </a>
+              <p class="news__description">Виявляється, щоб почати вивчати JavaScript, необов'язково бути карасем.</p>
+              <div class="news__meta">
+                <span class="news__hashtag">#IT</span>
+                <p class="news__time">11 жовтня 2022</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="news-item" data-category="sport">
+            <a href="article10.html"><img src="img/jpg/news-euro-2024.jpg" alt="News Image" class="news__img"></a>
+            <div class="news-content">
+              <a href="article10.html" class="news__link">
+                <h3 class="news__title">Чемпіонат Європи 2024: Основні події турніру та домінування Іспанії</h3>
+              </a>
+              <p class="news__description">Чемпіонат Європи з футболу 2024 став яскравим святом для вболівальників, а Іспанія здобула свій четвертий титул, продемонструвавши неймовірну майстерність.</p>
+              <div class="news__meta">
+                <span class="news__hashtag"><!-- #Євро2024 #Футбол --> #Спорт</span>
+                <p class="news__time">14 липня 2024</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="news-item" data-category="sports">
+            <a href="article11.html"><img src="img/jpg/news-olympics-2024.jpg" alt="News Image" class="news__img"></a>
+            <div class="news-content">
+              <a href="article11.html" class="news__link">
+                <h3 class="news__title">Спортивне свято року: Олімпійські ігри 2024 підкорили Париж</h3>
+              </a>
+              <p class="news__description">Олімпійські ігри 2024 року у Парижі стали винятковим святом спорту, зібравши кращих атлетів світу та подарувавши незабутні рекорди та моменти.</p>
+              <div class="news__meta">
+                <span class="news__hashtag"><!-- #ОлімпійськіІгри #СпортивніДосягнення --> #Спорт</span>
+                <p class="news__time">11 серпня 2024</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="news-item" data-category="discoveries">
+            <a href="article12.html"><img src="img/jpg/news-3d-heart.jpg" alt="News Image" class="news__img"></a>
+            <div class="news-content">
+              <a href="article12.html" class="news__link">
+                <h3 class="news__title">Від ідеї до реальності: штучне серце з 3D-принтера успішно функціонує в тілі пацієнта</h3>
+              </a>
+              <p class="news__description">Вперше в історії лікарі успішно пересадили серце, надруковане на 3D-принтері, що відкриває нові горизонти для трансплантології.</p>
+              <div class="news__meta">
+                <span class="news__hashtag"><!-- #Медицина --> #Відкриття</span>
+                <p class="news__time">17 липня 2017</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="news-item" data-category="discoveries">
+            <a href="article13.html"><img src="img/jpg/news-lab-meat.jpg" alt="News Image" class="news__img"></a>
+            <div class="news-content">
+              <a href="article13.html" class="news__link">
+                <h3 class="news__title">М'ясо з пробірки: інновація, яка змінює харчову індустрію</h3>
+              </a>
+              <p class="news__description">Вирощене в лабораторії м'ясо вже на ринку, пропонуючи екологічно чисту альтернативу традиційному м'ясу, хоча його висока вартість ще обмежує доступність.</p>
+              <div class="news__meta">
+                <span class="news__hashtag"><!-- #Харчування --> #Відкриття</span>
+                <p class="news__time">3 січня 2023</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="news-item" data-category="discoveries">
+            <a href="article14.html"><img src="img/jpg/news-fusion-energy.jpg" alt="News Image" class="news__img"></a>
+            <div class="news-content">
+              <a href="article14.html" class="news__link">
+                <h3 class="news__title">Майбутнє енергетики: термоядерна енергія вперше стала більш ефективною, ніж її витрати</h3>
+              </a>
+              <p class="news__description">Американські вчені досягли історичного прориву, отримавши більше енергії з термоядерного реактора, ніж було витрачено на його підтримку.</p>
+              <div class="news__meta">
+                <span class="news__hashtag"><!-- #Енергетика #Інновації --> #Відкриття</span>
+                <p class="news__time">6 грудня 2021</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="news-item" data-category="artificial-intelligence">
+            <a href="article15.html"><img src="img/jpg/news-ai-creativity.jpg" alt="News Image" class="news__img"></a>
+            <div class="news-content">
+              <a href="article15.html" class="news__link">
+                <h3 class="news__title">Творчість під загрозою: Світові зірки повстали проти впливу ШІ на творчість</h3>
+              </a>
+              <p class="news__description">Актори, письменники та музиканти об'єдналися, щоб захистити свою творчість від нелегального використання для навчання штучного інтелекту.</p>
+              <div class="news__meta">
+                <span class="news__hashtag"><!-- #Творчість --> #ШтучнийІнтелект</span>
+                <p class="news__time">23 жовтня 2024</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="news-item" data-category="artificial-intelligence">
+            <a href="article16.html"><img src="img/jpg/news-nobel-with-ai.jpg" alt="News Image" class="news__img"></a>
+            <div class="news-content">
+              <a href="article16.html" class="news__link">
+                <h3 class="news__title">Наука майбутнього: як штучний інтелект привів до двох Нобелівських премій</h3>
+              </a>
+              <p class="news__description">Дві Нобелівські премії були вручені за значні досягнення в галузі штучного інтелекту, зокрема за прориви у моделюванні структури білків і розробці машинного навчання на основі нейронних мереж.</p>
+              <div class="news__meta">
+                <span class="news__hashtag"><!-- #Наука --> #ШтучнийІнтелект</span>
+                <p class="news__time">9 жовтня 2024</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="news-item" data-category="artificial-intelligence">
+            <a href="article17.html"><img src="img/jpg/news-ai-art.jpg" alt="News Image" class="news__img"></a>
+            <div class="news-content">
+              <a href="article17.html" class="news__link">
+                <h3 class="news__title">ШІ в мистецтві: робот Ai-Da створив картину, продану за $1 мільйон — інновація чи провокація?</h3>
+              </a>
+              <p class="news__description">Робот Ai-Da створив портрет Алана Тюрінга, який продали на аукціоні Sotheby’s за $1 мільйон, продемонструвавши інноваційні можливості ШІ в мистецтві.</p>
+              <div class="news__meta">
+                <span class="news__hashtag"><!-- #Мистецтво --> #ШтучнийІнтелект</span>
+                <p class="news__time">11 листопада 2024</p>
+              </div>
+            </div>
+          </div>                                                                                                            
+        </div>
+      </div>
+    </main>
+    
+    <footer class="footer">
+      <div class="footer__content">
+        <p class="footer__text">© 2024 Flash News. Всі права захищені.</p>
+        <a href="home.html"><div class="logo__box">
+          <img src="img/svg/white-logo.svg" alt="FLASH NEWS!" class="logo__image">
+        </div></a>
+      </div>
+    </footer>
+
+    <button id="scrollToTopBtn">↑</button>
+
+    <div id="cookieBanner" class="hidden">
+      <p>
+          Ми використовуємо файли cookie та сервіси збору технічних даних відвідувачів 
+          (наприклад, IP-адресу, місцезнаходження тощо) для забезпечення роботи сайту 
+          та покращення якості обслуговування. Продовжуючи користуватися нашим сайтом, 
+          ви погоджуєтеся з використанням цих технологій.
+          <a href="#" id="learnMore">Детальніше</a>
+      </p>
+      <button id="acceptCookies">Прийняти</button>
+    </div>
+
+  </div>
+  <script src="js/burger.js" defer></script>
+  <script src="js/comment.js" defer></script>
+  <script src="js/filter.js" defer></script>
+  <script src="js/form.js" defer></script>
+  <script src="js/likes.js" defer></script>
+  <script src="js/profile.js" defer></script>
+  <script src="js/script.js" defer></script>
+  <script src="js/search-button.js" defer></script>
+  <script src="js/theme-button.js" defer></script>
+  <script src="js/tooltip.js" defer></script>
+  <script src="js/up-button.js" defer></script>
+</body>
+</html>

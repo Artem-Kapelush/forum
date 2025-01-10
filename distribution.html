@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Розсилка новин</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/setting.css">
+	<link rel="stylesheet" href="css/media.css">
+  <link rel="icon" type="image/x-icon" href="img/svg/white-logo.svg">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__content"> 
+        <!-- Логотип -->
+        <div class="logo__box"><a href="home.html">
+          <img src="img/svg/logo.svg" alt="FLASH NEWS!" class="logo__image">
+        </a></div>
+
+        <div class="navigation-tools">
+          <!-- Кнопка зміни теми -->
+          <button class="button-tools theme-switcher">
+            <img src="img/svg/moon-normal.svg" alt="Theme Icon" class="icon-tools theme-icon">
+          </button>
+
+          <!-- Кнопка пошуку -->
+          <button class="button-tools search" id="search-button">
+            <img src="img/svg/search-normal.svg" alt="Search Icon" class="icon-tools search-icon">
+          </button>
+                  
+          <!-- Поле для вводу -->
+          <div class="search-container">
+            <button class="button-tools search-submit" id="submit-search-button">
+              <img src="img/svg/search-hover.svg" alt="Search Submit Icon" class="icon-tools search-submit-icon">
+            </button>
+
+            <input type="text" class="search-input" placeholder="Пошук статей">
+          </div>
+
+          <!-- Кнопка профілю -->
+          <button class="button-tools profile">
+            <img src="img/svg/profile-normal.svg" alt="Profile Icon" class="icon-tools profile-icon">
+          </button>
+        </div>
+
+        <!-- Меню навігації -->
+        <button id="menu-button" class="dropdown__navigation">
+          <img id="menu-icon" src="img/svg/menu-open-light.svg" alt="Menu Icon">
+        </button>
+        <nav id="menu-list" class="navigation__items hidden">
+          <a href="home.html" class="navigation__link">Головна</a>
+          <a href="distribution.html" class="navigation__link">Розсилка</a>
+          <a href="#контакти" class="navigation__link">Контакти</a>
+        </nav>
+      </div>
+    </header>  
+    
+    <main class="main">
+        <div class="main__content">
+
+          <div id="search-results" class="search-results"></div>
+  
+          <div class="newsletter-subscription">
+            <h1 class="title">Підпишіться на нашу розсилку</h1>
+            
+            <!-- Блок під заголовком -->
+            <div class="rounded-info-block">
+              <img src="img/svg/icon-ok-light.svg" alt="Галочка" class="icon-ok">
+              <p id="info-block-text">Який&lt;strong&gt;нетямущий&lt;/strong&gt;браузер!</p>
+            </div>
+            
+            <!-- Блок вводу email -->
+            <div class="email-input-block">
+              <div class="input-wrapper">
+                <label class="title-hint">email</label>
+                <input class="email-field" id="email" placeholder="kompschool@gmail.com" maxlength="35" required />
+                <!-- Підсказки -->
+                <div id="tooltip-at" class="tooltip-message">Пошта повинна містити символ @</div>
+                <div id="tooltip-domain" class="tooltip-message">Домен має закінчуватися на .com</div>
+                <div id="tooltip-english" class="tooltip-message">Введення має бути тільки англійськими літерами</div>
+              </div>  
+              <button class="subscribe-button" id="submitBtn" disabled>Підписатися</button>
+            </div>
+            <div id="success-message" class="success-message" style="display: none;">Підписка на розсилку підтверджена, новини відправлено на вашу адресу: <span id="saved-email"></span></div>
+          </div>
+          
+          <div class="more-news-section">
+            <h2 class="subtitle">Або почитайте ще трохи новин</h2>
+
+            <div class="news-column">
+              <div class="news-item-column">
+                <a href="article1.html"><img src="img/jpg/news-graph.jpg" alt="Зображення статті 1" class="news__img-column distribution__img-column"></a>
+                <div class="article-content">
+                  <a href="article1.html" class="news__link">
+                    <h3 class="news__title">Нова бібліотека для створення графіків</h3>
+                  </a>  
+                  <p class="news__description">Тепер можна створити дашборд за лічені секунди.</p>
+                  <span class="news__time">16 жовтня 2022</span>
+                </div>
+              </div>
+
+              <div class="news-item-column">
+                <a href="article2.html"><img src="img/jpg/news-robot.jpg" alt="Зображення статті 2" class="news__img-column distribution__img-column"></a>
+                <div class="article-content">
+                  <a href="article2.html" class="news__link">
+                    <h3 class="news__title">Що там у роботів?</h3>
+                  </a>  
+                  <p class="news__description">У робототехніці відбувається багато цікавого, ця новина могла б бути про це, але ні.</p>
+                  <span class="news__time">15 жовтня 2022</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+      <div class="footer__content">
+        <p class="footer__text">© 2024 Flash News. Всі права захищені.</p>
+        <a href="home.html"><div class="logo__box">
+          <img src="img/svg/white-logo.svg" alt="FLASH NEWS!" class="logo__image">
+        </div></a>
+      </div>
+    </footer>
+
+    <button id="scrollToTopBtn">↑</button>
+
+    <div id="cookieBanner" class="hidden">
+      <p>
+          Ми використовуємо файли cookie та сервіси збору технічних даних відвідувачів 
+          (наприклад, IP-адресу, місцезнаходження тощо) для забезпечення роботи сайту 
+          та покращення якості обслуговування. Продовжуючи користуватися нашим сайтом, 
+          ви погоджуєтеся з використанням цих технологій.
+          <a href="#" id="learnMore">Детальніше</a>
+      </p>
+      <button id="acceptCookies">Прийняти</button>
+    </div>
+
+  </div>
+  <script src="js/burger.js" defer></script>
+  <script src="js/comment.js" defer></script>
+  <script src="js/filter.js" defer></script>
+  <script src="js/form.js" defer></script>
+  <script src="js/likes.js" defer></script>
+  <script src="js/profile.js" defer></script>
+  <script src="js/script.js" defer></script>
+  <script src="js/search-button.js" defer></script>
+  <script src="js/theme-button.js" defer></script>
+  <script src="js/tooltip.js" defer></script>
+  <script src="js/up-button.js" defer></script>
+</body>
+</html>    
